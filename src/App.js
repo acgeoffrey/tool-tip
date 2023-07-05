@@ -23,25 +23,34 @@ function App() {
         </div>
         {hovering && (
           <div className={`tip-div tip-${position}`}>
-            Thanks for hovering! I'm a tooltip
+            {`Tooltip - ${position}`}
           </div>
         )}
       </div>
 
       <div className="position-div">
-        <button className="position top" onClick={() => setPosition("top")}>
+        <button
+          className={`position position-${position === "top"}`}
+          onClick={() => setPosition("top")}
+        >
           Top
         </button>
         <button
-          className="position bottom"
+          className={`position position-${position === "bottom"}`}
           onClick={() => setPosition("bottom")}
         >
           Bottom
         </button>
-        <button className="position left" onClick={() => setPosition("left")}>
+        <button
+          className={`position position-${position === "left"}`}
+          onClick={() => setPosition("left")}
+        >
           Left
         </button>
-        <button className="position right" onClick={() => setPosition("right")}>
+        <button
+          className={`position position-${position === "right"}`}
+          onClick={() => setPosition("right")}
+        >
           Right
         </button>
       </div>

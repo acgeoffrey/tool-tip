@@ -20,14 +20,14 @@ code {
 
 .tooltip-div {
   position: relative;
-  height: 10rem;
-  width: 55%;
+  height: 8rem;
+  width: 50%;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 .component-div {
-  width: 30%;
+  width: 32.5%;
   height: 3rem;
   position: absolute;
   top: 50%;
@@ -43,7 +43,7 @@ code {
 }
 
 .tip-div {
-  height: 2rem;
+  height: 1rem;
   background-color: white;
   width: 30%;
   text-align: center;
@@ -96,4 +96,9 @@ code {
   border: 2px solid rgb(253, 171, 69);
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.position-true {
+  background-color: white;
+  color: rgb(253, 171, 69);
 }
